@@ -52,8 +52,19 @@
 
 ## 3.资源推荐
 
+### 资源网址
+
 - [AINAV.net 网站](https://www.ainav.net/)
 - [逐行讲解论文代码](https://github.com/labmlai/annotated_deep_learning_paper_implementations) (使用 PyTorch)
+
+### 项目
+
+一些项目本地部署流程见：[项目部署流程指导](Project_Deployment\项目部署.md)
+
+- [GFPGAN](https://github.com/TencentARC/GFPGAN)：照片修复
+
+### 相关书籍
+
 - [Deep Learning - A Visual Approach](https://github.com/blueberrymusic/Deep-Learning-A-Visual-Approach)
 
 ![](tutorials_img/01.jpg)
