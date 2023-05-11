@@ -52,6 +52,8 @@
 
 ## 3.资源推荐
 
+- [AINAV.net 网站](https://www.ainav.net/)
+- [逐行讲解论文代码](https://github.com/labmlai/annotated_deep_learning_paper_implementations) (使用 PyTorch)
 - [Deep Learning - A Visual Approach](https://github.com/blueberrymusic/Deep-Learning-A-Visual-Approach)
 
 ![](tutorials_img/01.jpg)
