@@ -26,6 +26,16 @@
 
 框架学习：Tensorflow 2.0 龙良曲，Pytorch 龙良曲，同时也对前面的知识进行回顾复习。
 
+### 两大框架
+
+**首推 Pytorch**
+
+
+
+**Tensorflow**
+
+
+
 ### 方向选择
 
 **CV (Computer Vision) 方向：**
