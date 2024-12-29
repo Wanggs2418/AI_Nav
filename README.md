@@ -6,6 +6,8 @@
 
 [zhelper search](https://tool.yibook.org/)：强大的书籍搜索网站
 
+
+
 ## 2.推荐路线
 
 > 参照 ：[啥都会一点研究生视频](https://www.bilibili.com/video/BV16341177c1/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=412ee9f1892496b8506f8302ac9d1437) && [AI-Expert-Roadmap](https://github.com/AMAI-GmbH/AI-Expert-Roadmap)
@@ -30,11 +32,11 @@
 
 **首推 Pytorch**
 
-
+[Personal Pytorch Notes](https://github.com/Wanggs2418/PyTorch_notes)
 
 **Tensorflow**
 
-
+[Personal TF_Notes](https://github.com/Wanggs2418/TensorFlow_notes)
 
 ### 方向选择
 
@@ -54,13 +56,68 @@
 
 **NLP (Natural Language Processing) 方向：**
 
-
-
 **RL (Reinforcement Learning) 方向：**
 
 
 
-## 3.资源推荐
+## 3.本地部署Ollama
+
+### 快速部署
+
+[Ollama](https://ollama.com/) | [Ollama Github](https://github.com/ollama/ollama)
+
+```cmd
+# 显示ollama常用命令
+ollama
+
+# 下载大模型qwen7b到本地（注意大模型占用的内存大小）
+# b表示10参数(w,b)，7b即共70亿参数的大模型
+ollama pull qwen2:7b
+
+# 查看已经安装的大模型
+ollama list
+
+# 删除
+ollama rm qwen2:7b
+
+# 显示模型的基本信息
+ollama show qweb2:7b
+
+# 本地运行大模型(注意电脑配置)
+ollama run qwen2:7b
+```
+
+### Ollama 接口开发
+
+默认端口号：11434
+
+```cmd
+# 浏览器访问
+http://localhost:11434/
+
+# 使用 python 调用接口访问本地大模型
+pip show requests
+pip install requests
+```
+
+**API 调用**
+
+```cmd
+import requests
+url = "http://localhost:11434/api/generate"
+payload = {
+    "model": "qwen2",
+    "prompt": "介绍qwen2模型",
+    "stream": False
+}
+
+response = requests.post(url, json=payload)
+print("response:", response.json()['response'])
+```
+
+
+
+## 4.资源推荐
 
 ### 资源网址
 
@@ -77,7 +134,7 @@
 
 - [Deep Learning - A Visual Approach](https://github.com/blueberrymusic/Deep-Learning-A-Visual-Approach)
 
-![](tutorials_img/01.jpg)
+![](img/01.jpg)
 
 - [Deep Learning with by pytorch](https://github.com/deep-learning-with-pytorch/dlwpt-code)
 
@@ -85,5 +142,5 @@
 
   [翻译项目地址](https://github.com/ShusenTang/Deep-Learning-with-PyTorch-Chinese)
 
-![](tutorials_img/02.jpg)
+![](img/02.jpg)
 
